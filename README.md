@@ -1,8 +1,8 @@
 # EQEmu RoF2 achievements
 
-A source release of the **RoF2 achievement engine, opcode mappings, packet layouts, reward selection support and reviewed Crescent Reach quest content**. It targets the May10,2013 RoF2 client and a pinned EQEmu source baseline.
+A source release of the **RoF2 achievement engine, opcode mappings, packet layouts, reward selection support and reviewed Crescent Reach and Shard’s Landing quest content**. It targets the May10,2013 RoF2 client and a pinned EQEmu source baseline.
 
-The release includes the engine/protocol and a Crescent Reach content milestone. It does **not** claim that every achievement or quest through Rain of Fear is playable. The historical catalogue currently admits 254 identities; unfinished content remains outside this release.
+The release includes the engine/protocol and Crescent Reach and Shard’s Landing content milestones. It does **not** claim that every achievement or quest through Rain of Fear is playable. The content packages contain ten reviewed achievement definitions. The wider historical research catalogue admits 254 identities; unfinished content remains outside this release.
 
 ## What is included
 
@@ -12,6 +12,7 @@ The release includes the engine/protocol and a Crescent Reach content milestone.
 - **All12 achievement/reward opcode mappings**, a standalone packet-prefix header, variable layout documentation and canonical serializer source excerpts.
 - Five ordered production patches, provenance and the upstream license.
 - [Crescent Reach content](content/crescent/README.md): scoped quest and catalogue SQL, NPC scripts, acquisition/reward dependencies, installation checks and labelled defaults. Its guide distinguishes native gameplay evidence from source review.
+- [Shard’s Landing content](content/shards-landing/README.md): nine tasks covering the Partisan arc and portal prerequisite, focused quest-hook patches, guarded upgrades and source provenance. All eight configured Partisan components completed in native solo or single-member shared-task checks; multiple-member scenarios remain pending.
 
 No tests, captures, client assets or private runtime records are included.
 
@@ -27,7 +28,7 @@ Start with upstream commit `c9c8747ac949deddb140d196d241fa4e777500c7`. Apply the
 4. `patches/0004-unbound-component-completion-barrier.patch` — prevent partially mapped definitions from falsely completing.
 5. `patches/0005-shards-native-quest-support.patch` — shared-task identity and restricted quest-item targeting support.
 
-After building the engine and applying its schema migrations, follow the separate [Crescent content installation guide](content/crescent/README.md) for the ordered SQL and quest files. Its read-only preflight detects conflicting custom content before installation.
+After building the engine and applying its schema migrations, follow the [Crescent](content/crescent/README.md) and [Shard’s Landing](content/shards-landing/README.md) content guides for the ordered SQL and quest files. Their read-only preflights detect conflicting custom content before installation.
 
 Apply the schema migrations before launching patched binaries. See [the protocol reference](protocol/README.md) for the opcode table and structures. [engine-provenance.json](engine-provenance.json) lists exact file scope and patch digests.
 
