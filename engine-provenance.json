@@ -172,7 +172,7 @@
       "apply_check": "PASS"
     }
   ],
-  "validation": "Exact saved changed-file baseline and each patch layer passed git apply --check and application. Clean full build/native verification not run.",
+  "validation": "Sequential patch application passed. Full clean pinned-source Linux x86-64 Release build of zone and world passed with GCC12.2 and upstream default PCH. Native clean-port run remains pending.",
   "exclusion_reason": "No tests/fixtures/examples, legacy ToB coverage report or broad native criteria repair; historical content is separately curated.",
   "extra_baseline_file": {
     "path": "zone/zone.cpp",
@@ -183,5 +183,24 @@
     "SpiritShrouded event suppression depends on unrelated local shroud engine APIs; absent clean baseline does not expose that feature.",
     "Older local compiler/packet-constructor compatibility adaptations are not changes needed by pinned newer upstream.",
     "Shared-task Lua identity helper belongs to Shards and is withheld."
-  ]
+  ],
+  "clean_build": {
+    "result": "PASS",
+    "targets": [
+      "zone",
+      "world"
+    ],
+    "source_base": "c9c8747ac949deddb140d196d241fa4e777500c7",
+    "patches": 4,
+    "platform": "Linux x86-64",
+    "compiler": "GCC12.2.0",
+    "configuration": "Release; EQEMU_BUILD_PCH=ON; EQEMU_BUILD_TESTS=OFF; build concurrency1",
+    "isolation": "separate bounded build container; no live runtime files or database mounts",
+    "binaries_sha256": {
+      "zone": "6d2ab0e1279da3cecf2c7355886df94af4c2db84da002004658742821ae10d16",
+      "world": "ef6acca22a80eafa241ba4dc453599ce12109ab41694de4c8ae09fddd0666415"
+    },
+    "native_clean_port": "NOT RUN",
+    "nondefault_configuration": "PCH-OFF is not validated; older Clang14 is not validated. No exploratory header fixes included."
+  }
 }

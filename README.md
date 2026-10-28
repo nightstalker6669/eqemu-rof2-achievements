@@ -27,7 +27,7 @@ Apply the schema migrations before launching patched binaries. See [the protocol
 
 ## Verification
 
-Each layer passed sequential patch-application checks against the pinned source preimages. The current running local port has native achievement/reward observations. A full clean-source build and native run of this publication port are still pending; those are separate validation claims.
+Each layer passed sequential patch-application checks against the pinned source preimages. The current running local port has native achievement/reward observations. The four-patch series built both `zone` and `world` successfully from a clean pinned checkout on Linux x86-64 using GCC12.2, Release mode and upstream's default precompiled headers. Native gameplay on this reconstructed clean-port build remains pending; existing local-port observations are a separate claim.
 
 ## Attribution
 
