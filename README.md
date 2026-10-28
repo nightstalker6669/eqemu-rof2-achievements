@@ -1,8 +1,8 @@
 # EQEmu RoF2 achievements
 
-A source release of the **RoF2 achievement engine, opcode mappings, packet layouts and reward selection support**. It targets the May10,2013 RoF2 client and a pinned EQEmu source baseline.
+A source release of the **RoF2 achievement engine, opcode mappings, packet layouts, reward selection support and reviewed Crescent Reach quest content**. It targets the May10,2013 RoF2 client and a pinned EQEmu source baseline.
 
-This first milestone supplies the engine and protocol. It does **not** claim that every achievement or quest through Rain of Fear is playable. The separately researched historical catalogue currently admits254 identities; quest content and historical coverage will be released as reviewed milestones rather than bundled with unfinished work.
+The release includes the engine/protocol and a Crescent Reach content milestone. It does **not** claim that every achievement or quest through Rain of Fear is playable. The historical catalogue currently admits 254 identities; unfinished content remains outside this release.
 
 ## What is included
 
@@ -10,7 +10,10 @@ This first milestone supplies the engine and protocol. It does **not** claim tha
 - Persistent achievement/task reward selection, permanent-class filtering and common-only reward claiming.
 - Event hooks and quest APIs for authoring criteria.
 - **All12 achievement/reward opcode mappings**, a standalone packet-prefix header, variable layout documentation and canonical serializer source excerpts.
-- Four ordered production patches, provenance and the upstream license. No tests, captures, client assets or private runtime records.
+- Four ordered production patches, provenance and the upstream license.
+- [Crescent Reach content](content/crescent/README.md): scoped quest and catalogue SQL, NPC scripts, acquisition/reward dependencies, installation checks and labelled defaults. Its guide distinguishes native gameplay evidence from source review.
+
+No tests, captures, client assets or private runtime records are included.
 
 ## Install
 
@@ -22,6 +25,8 @@ Start with upstream commit `c9c8747ac949deddb140d196d241fa4e777500c7`. Apply the
 2. `patches/0002-class-rewards-and-common-only.patch` — class eligibility, common-only claims and persistence corrections.
 3. `patches/0003-council-destructible-and-ground-items.patch` — quest-object rendering and ground-item charges.
 4. `patches/0004-unbound-component-completion-barrier.patch` — prevent partially mapped definitions from falsely completing.
+
+After building the engine and applying its schema migrations, follow the separate [Crescent content installation guide](content/crescent/README.md) for the ordered SQL and quest files. Its read-only preflight detects conflicting custom content before installation.
 
 Apply the schema migrations before launching patched binaries. See [the protocol reference](protocol/README.md) for the opcode table and structures. [engine-provenance.json](engine-provenance.json) lists exact file scope and patch digests.
 
