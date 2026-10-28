@@ -9,14 +9,14 @@
     "Conquering910025": "PASS native one-participant shared-task completion:6native+4fearkills in each ofthreezones,all sixshards,nativecombine,fivecasts/summons/kills,exactreturn. Additional native checks passed: two-member acceptance, ordinary kill deduplication with each member attacking, creator-absent nightmare credit and foreign-instance rejection. Advanced scenario setup is labelled separately below.",
     "Believers910026": "PASS15nativekills,sermon,headcustody/handin,savedcomponent2075232 and exact4AA.",
     "Exploring910020": "PASS nine analytic potions prepared/consumed, nine actual sample kills including exact native ice/chill wyverns, Drent hail, savedtask910020/component2075226 and exact6AA. Native replay acceptance also PASS: fresh first activity and next persisted run epoch, unchanged AA on acceptance, prior history/achievement retained.",
-    "UnspokenVerse910022": "PASS actual ten papers/fiveinks/oneblood, both native quest-spawned ambush kills withGMoff,tenperiodlocations,Nostuliafinalhail and bounded personal material cleanup; saved task/component."
+    "UnspokenVerse910022": "PASS actual ten papers/fiveinks/oneblood, both native quest-spawned ambush kills withGMoff,tenperiodlocations,Nostuliafinalhail and bounded personal material cleanup; saved task/component. Supplemental isolated multiplayer checks PASS: grouped entry kill advanced both personal counters; global single-apparition limit held with grouped and separate parties; non-owner exit kill granted no progress."
   },
   "remaining": [
     "Clean separate-server install/native run not performed.",
     "Exact original combat profiles/models and some numerical defaults remain reconstructed.",
-    "Unspoken group-owned ambush credit and one-global-apparition behavior still require native coverage.",
     "Full Conquering route evidence is single-member. Additional two-client scenarios do not claim a full repeated two-member completion.",
-    "Full task routes used the documented travel/gear/healing conveniences. Advanced multiplayer fixtures additionally seeded prerequisites and supplied one test crystal; their tested kill objective was never granted."
+    "Full task routes used the documented travel/gear/healing conveniences. Advanced multiplayer fixtures additionally seeded prerequisites and supplied one test crystal; their tested kill objective was never granted.",
+    "Multiplayer evidence covers the documented representative scenarios; a full repeated two-member quest completion, larger parties and raid variations are not claimed."
   ],
   "source_snapshot": {
     "module_sha256": "af08d3a2c5400a9edce8a4ed560db75dfaf646ac5742058b960665bba00a4430",
@@ -35,7 +35,10 @@
     "ordinary_kill_deduplication": "PASS two original EW NPC kills, one by each member: shared count0\u21921\u21922 and both persisted character counts0\u21921\u21922. No progress/NPC/item grants in these kill cases.",
     "creator_absent_nightmare": "PASS actual33565 crystal cast created a nightmare; creator moved to another zone retaining shared membership. Remaining member killed it; shared activity17 and both persisted counts advanced0\u21921.",
     "foreign_shared_instance": "PASS separate ungrouped native shared identities, with foreign member activity17 explicitly Active/count0. Real creator-owned33565 nightmare killed by foreign member while creator offline: foreign count stayed0, owner count stayed1, both persisted rows agreed.",
-    "advanced_fixture_setup": "Explicit QA setup advanced earlier activities through native GM taskupdate and supplied a crystal. Activity17 was not advanced through GM commands; only actual cast-created NPC kills were evaluated. This is isolated protocol/quest-ownership coverage, not a second full acquisition run.",
-    "client_incident": "One creator client stalled on a black zoning screen and the server marked it offline. That exact client was closed; the recorded cast was not replayed. The foreign-instance case therefore exercised an offline creator. No server restart or code/mapping changes were needed for these checks."
+    "advanced_fixture_setup": "Explicit QA setup advanced earlier activities and supplied required items for isolated scenarios. Tested nightmare17 and ambush3/14 objectives were never advanced through GM commands. This supplements the independently completed full solo/single-member acquisition routes.",
+    "client_incident": "One creator client stalled on a black zoning screen and the server marked it offline. That exact client was closed; the recorded cast was not replayed. The foreign-instance case therefore exercised an offline creator. No server restart or code/mapping changes were needed for these checks.",
+    "unspoken_group_ownership": "PASS actual entry apparition killed with two eligible grouped characters: both personal activity3 counters0\u21921 persisted. Separate-party exit apparition killed by eligible non-owner while owner in another zone: both activity14 counters stayed0. Both were explicitly Active before combat and carried required writing materials.",
+    "unspoken_global_limit": "PASS one live authentic apparition over12seconds with both grouped members at trigger, and over8seconds with an eligible foreign character at an owner-triggered apparition. No duplicate or foreign replacement.",
+    "unspoken_qa_setup_teardown": "Native task assignment, earlier activities and16writingmaterials per character were QA setup. Tested ambush activities3/14 were never granted. Secondary account was temporarily elevated only for item provisioning, restored0 and refreshed before combat. One supplied secondary QA blood was destroyed only after the foreign kill to stop retriggering. No apparition remained alive."
   }
 }

@@ -12,7 +12,7 @@ The release includes the engine/protocol and Crescent Reach and Shard’s Landin
 - **All12 achievement/reward opcode mappings**, a standalone packet-prefix header, variable layout documentation and canonical serializer source excerpts.
 - Five ordered production patches, provenance and the upstream license.
 - [Crescent Reach content](content/crescent/README.md): scoped quest and catalogue SQL, NPC scripts, acquisition/reward dependencies, installation checks and labelled defaults. Its guide distinguishes native gameplay evidence from source review.
-- [Shard’s Landing content](content/shards-landing/README.md): nine tasks covering the Partisan arc and portal prerequisite, focused quest-hook patches, guarded upgrades and source provenance. All eight configured Partisan components completed in native solo or single-member shared-task checks. Additional two-member acceptance, kill deduplication, creator-absence and foreign-instance checks passed; the guide records QA setup and remaining Unspoken group coverage.
+- [Shard’s Landing content](content/shards-landing/README.md): nine tasks covering the Partisan arc and portal prerequisite, focused quest-hook patches, guarded upgrades and source provenance. All eight configured Partisan components completed in native solo or single-member shared-task checks. Additional two-member acceptance, kill deduplication, creator-absence and foreign-instance checks passed; Unspoken group ownership and the one-apparition limit passed representative checks too. The guide records QA setup and exact coverage boundaries.
 
 No tests, captures, client assets or private runtime records are included.
 
