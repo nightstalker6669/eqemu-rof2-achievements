@@ -10,7 +10,7 @@ The release includes the engine/protocol and a Crescent Reach content milestone.
 - Persistent achievement/task reward selection, permanent-class filtering and common-only reward claiming.
 - Event hooks and quest APIs for authoring criteria.
 - **All12 achievement/reward opcode mappings**, a standalone packet-prefix header, variable layout documentation and canonical serializer source excerpts.
-- Four ordered production patches, provenance and the upstream license.
+- Five ordered production patches, provenance and the upstream license.
 - [Crescent Reach content](content/crescent/README.md): scoped quest and catalogue SQL, NPC scripts, acquisition/reward dependencies, installation checks and labelled defaults. Its guide distinguishes native gameplay evidence from source review.
 
 No tests, captures, client assets or private runtime records are included.
@@ -25,6 +25,7 @@ Start with upstream commit `c9c8747ac949deddb140d196d241fa4e777500c7`. Apply the
 2. `patches/0002-class-rewards-and-common-only.patch` — class eligibility, common-only claims and persistence corrections.
 3. `patches/0003-council-destructible-and-ground-items.patch` — quest-object rendering and ground-item charges.
 4. `patches/0004-unbound-component-completion-barrier.patch` — prevent partially mapped definitions from falsely completing.
+5. `patches/0005-shards-native-quest-support.patch` — shared-task identity and restricted quest-item targeting support.
 
 After building the engine and applying its schema migrations, follow the separate [Crescent content installation guide](content/crescent/README.md) for the ordered SQL and quest files. Its read-only preflight detects conflicting custom content before installation.
 
@@ -32,7 +33,7 @@ Apply the schema migrations before launching patched binaries. See [the protocol
 
 ## Verification
 
-Each layer passed sequential patch-application checks against the pinned source preimages. The current running local port has native achievement/reward observations. The four-patch series built both `zone` and `world` successfully from a clean pinned checkout on Linux x86-64 using GCC12.2, Release mode and upstream's default precompiled headers. Native gameplay on this reconstructed clean-port build remains pending; existing local-port observations are a separate claim.
+Each layer passed sequential patch-application checks against the pinned source preimages. The current running local port has native achievement/reward observations. The five-patch series built both `zone` and `world` successfully from a clean pinned checkout on Linux x86-64 using GCC12.2, Release mode and upstream's default precompiled headers. Native gameplay on this reconstructed clean-port build remains pending; existing local-port observations are a separate claim.
 
 ## Attribution
 

@@ -170,6 +170,17 @@
       "file": "patches/0004-unbound-component-completion-barrier.patch",
       "sha256": "efb1e88b78c422d0e6b585c8eab9ee51d58f55ec45987f6992c0a3a80d2f3f7f",
       "apply_check": "PASS"
+    },
+    {
+      "file": "patches/0005-shards-native-quest-support.patch",
+      "sha256": "e09249880719b2994045bf9f0f774a3bfab29d64940415326a97ced74e10dd40",
+      "apply_check": "PASS against published0001..0004 pinned-source checkout",
+      "scope": [
+        "zone/lua_client.h",
+        "zone/lua_client.cpp",
+        "zone/spells.cpp",
+        "zone/quest_item_target_permissions.h"
+      ]
     }
   ],
   "validation": "Sequential patch application passed. Full clean pinned-source Linux x86-64 Release build of zone and world passed with GCC12.2 and upstream default PCH. Native clean-port run remains pending.",
@@ -181,8 +192,7 @@
   },
   "initial_local_changes_not_automatically_ported": [
     "SpiritShrouded event suppression depends on unrelated local shroud engine APIs; absent clean baseline does not expose that feature.",
-    "Older local compiler/packet-constructor compatibility adaptations are not changes needed by pinned newer upstream.",
-    "Shared-task Lua identity helper belongs to Shards and is withheld."
+    "Older local compiler/packet-constructor compatibility adaptations are not changes needed by pinned newer upstream."
   ],
   "clean_build": {
     "result": "PASS",
@@ -191,16 +201,17 @@
       "world"
     ],
     "source_base": "c9c8747ac949deddb140d196d241fa4e777500c7",
-    "patches": 4,
+    "patches": 5,
     "platform": "Linux x86-64",
     "compiler": "GCC12.2.0",
     "configuration": "Release; EQEMU_BUILD_PCH=ON; EQEMU_BUILD_TESTS=OFF; build concurrency1",
     "isolation": "separate bounded build container; no live runtime files or database mounts",
     "binaries_sha256": {
-      "zone": "6d2ab0e1279da3cecf2c7355886df94af4c2db84da002004658742821ae10d16",
+      "zone": "9c40dbf469fdc174538288f9b36a2e89ebf806fafe7a832e723a040ec0516789",
       "world": "ef6acca22a80eafa241ba4dc453599ce12109ab41694de4c8ae09fddd0666415"
     },
     "native_clean_port": "NOT RUN",
-    "nondefault_configuration": "PCH-OFF is not validated; older Clang14 is not validated. No exploratory header fixes included."
+    "nondefault_configuration": "PCH-OFF is not validated; older Clang14 is not validated. No exploratory header fixes included.",
+    "sequence": "Full clean0001..0004 build followed by dependency-aware0005 rebuild of zone/world; exact pinned-source tree, no local shroud dependencies"
   }
 }
