@@ -70,8 +70,16 @@ Restart all world/zone processes through your normal management procedure after 
 - Collect and translate the ten Words papers. Their precise models/headings reuse PEQ-collected scenery, with the period map coordinates establishing item association. Duplicate itemless paper models and two explicitly labelled collector placeholders are addressed by the guarded migration.
 - For Unspoken Verse, carry the ten papers, five inks and one blood through the locations; no invented book click or dropping step is required.
 - Activate the Dire Tuning Crystal's full 30-second cast in the feartouched Eastern Wastes, then return to Shard's Landing. A cancelled cast does not attune the character. Ordinary-player travel through the real portals was checked separately.
-- For Conquering, designate one crafter to loot all six NoTrade shards. Shared progress does not move physical ingredients between players. The native run exercised one participant; second-member credit and foreign-instance rejection still require native coverage.
+- For Conquering, designate one crafter to loot all six NoTrade shards. Shared progress does not move physical ingredients between players. The native run exercised one participant; additional two-member credit and foreign-instance checks passed as described below; the full acquisition route was completed in the single-member run.
 - The Believers head is passive: carry it to the Silent Hall, finish the combat steps, leave the city, then return the exact head to Glask. There is no fabricated click effect.
+
+## Additional multiplayer coverage
+
+- **Shared acceptance and kill credit:** normal Director dialogue accepted two grouped level85 members. Two original East Wastes kills, one by each member, produced exactly two shared increments and matching persisted counts for both members.
+- **Creator absent:** a real crystal cast spawned the nightmare. After its creator zoned away, the other shared member killed it and both saved the expected single increment.
+- **Separate instances:** an ungrouped character with the same objective active in a different shared instance killed the creator-owned nightmare. Its counter remained zero, and the owner's existing counter was unchanged. The creator was offline after a client zoning failure during this case.
+
+The advanced scenarios used clearly labelled QA stage setup and a supplied crystal. The tested nightmare objective remained at its initial count until real combat. These checks supplement the previously completed full single-member route; they do not establish a full two-member acquisition/completion replay or exact Live encounter balance. Unspoken Verse group-owned ambush credit and one-global-apparition behavior remain pending.
 
 ## Evidence and remaining fidelity limits
 
