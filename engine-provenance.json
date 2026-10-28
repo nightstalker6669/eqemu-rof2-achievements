@@ -181,6 +181,17 @@
         "zone/spells.cpp",
         "zone/quest_item_target_permissions.h"
       ]
+    },
+    {
+      "file": "patches/0006-npc-bound-task-selector.patch",
+      "sha256": "8c0f896fc8f353078a2a7cd4287dd8c2e00d2cc092050eb16245c795b22f130f",
+      "apply_check": "PASS against published0001..0005; reverse apply PASS after build",
+      "scope": [
+        "zone/lua_client.cpp",
+        "zone/lua_client.h"
+      ],
+      "native_existing_port": "PASS real Blightfire sign doors/native offer acceptance; native level/cooldown semantics retained",
+      "protocol_changes": false
     }
   ],
   "validation": "Sequential patch application passed. Full clean pinned-source Linux x86-64 Release build of zone and world passed with GCC12.2 and upstream default PCH. Native clean-port run remains pending.",
@@ -201,17 +212,17 @@
       "world"
     ],
     "source_base": "c9c8747ac949deddb140d196d241fa4e777500c7",
-    "patches": 5,
+    "patches": 6,
     "platform": "Linux x86-64",
     "compiler": "GCC12.2.0",
     "configuration": "Release; EQEMU_BUILD_PCH=ON; EQEMU_BUILD_TESTS=OFF; build concurrency1",
     "isolation": "separate bounded build container; no live runtime files or database mounts",
     "binaries_sha256": {
-      "zone": "9c40dbf469fdc174538288f9b36a2e89ebf806fafe7a832e723a040ec0516789",
+      "zone": "bb760d813365c62568d51d844fbd5af1ac6789968eb5a356c158ca2bc6d05626",
       "world": "ef6acca22a80eafa241ba4dc453599ce12109ab41694de4c8ae09fddd0666415"
     },
     "native_clean_port": "NOT RUN",
     "nondefault_configuration": "PCH-OFF is not validated; older Clang14 is not validated. No exploratory header fixes included.",
-    "sequence": "Full clean0001..0004 build followed by dependency-aware0005 rebuild of zone/world; exact pinned-source tree, no local shroud dependencies"
+    "sequence": "Full clean0001..0004 build followed by dependency-aware0005 and0006 rebuilds of zone/world; pinned-source tree, no local shroud dependencies"
   }
 }

@@ -10,7 +10,7 @@ The release includes the engine/protocol and Crescent Reach and Shard’s Landin
 - Persistent achievement/task reward selection, permanent-class filtering and common-only reward claiming.
 - Event hooks and quest APIs for authoring criteria.
 - **All12 achievement/reward opcode mappings**, a standalone packet-prefix header, variable layout documentation and canonical serializer source excerpts.
-- Five ordered production patches, provenance and the upstream license.
+- Six ordered production patches, provenance and the upstream license.
 - [Crescent Reach content](content/crescent/README.md): scoped quest and catalogue SQL, NPC scripts, acquisition/reward dependencies, installation checks and labelled defaults. Its guide distinguishes native gameplay evidence from source review.
 - [Shard’s Landing content](content/shards-landing/README.md): nine tasks covering the Partisan arc and portal prerequisite, focused quest-hook patches, guarded upgrades and source provenance. All eight configured Partisan components completed in native solo or single-member shared-task checks. Additional two-member acceptance, kill deduplication, creator-absence and foreign-instance checks passed; Unspoken group ownership and the one-apparition limit passed representative checks too. The guide records QA setup and exact coverage boundaries.
 
@@ -27,6 +27,7 @@ Start with upstream commit `c9c8747ac949deddb140d196d241fa4e777500c7`. Apply the
 3. `patches/0003-council-destructible-and-ground-items.patch` — quest-object rendering and ground-item charges.
 4. `patches/0004-unbound-component-completion-barrier.patch` — prevent partially mapped definitions from falsely completing.
 5. `patches/0005-shards-native-quest-support.patch` — shared-task identity and restricted quest-item targeting support.
+6. `patches/0006-npc-bound-task-selector.patch` — native task offers from an object or door through a nearby NPC giver.
 
 After building the engine and applying its schema migrations, follow the [Crescent](content/crescent/README.md) and [Shard’s Landing](content/shards-landing/README.md) content guides for the ordered SQL and quest files. Their read-only preflights detect conflicting custom content before installation.
 
@@ -34,7 +35,7 @@ Apply the schema migrations before launching patched binaries. See [the protocol
 
 ## Verification
 
-Each layer passed sequential patch-application checks against the pinned source preimages. The current running local port has native achievement/reward observations. The five-patch series built both `zone` and `world` successfully from a clean pinned checkout on Linux x86-64 using GCC12.2, Release mode and upstream's default precompiled headers. Native gameplay on this reconstructed clean-port build remains pending; existing local-port observations are a separate claim.
+Each layer passed sequential patch-application checks against the pinned source preimages. The current running local port has native achievement/reward observations. The six-patch series built both `zone` and `world` successfully from a clean pinned checkout on Linux x86-64 using GCC12.2, Release mode and upstream's default precompiled headers. Native gameplay on this reconstructed clean-port build remains pending; existing local-port observations are a separate claim.
 
 ## Attribution
 
