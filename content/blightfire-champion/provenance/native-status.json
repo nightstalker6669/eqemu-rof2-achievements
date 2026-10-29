@@ -18,7 +18,8 @@
     "Fresh relic/feather/torch acquisition and actual hand-ins",
     "Witch staff deliveries and reward",
     "Defan crest/torch hand-ins, floor-to-roof transition with restored health, roof signal-fire hand-in and class-filtered armor choice",
-    "Actual Runestaff casts on all four distinct weakened original Moorwalkers, slumber credit, return and belt reward"
+    "Actual Runestaff casts on all four distinct weakened original Moorwalkers, slumber credit, return and belt reward",
+    "Follow-up read-only native inspection verified corrected max_hp/max_mana stat keys on original Defan395080: HP12000/12000 and mana1000/1000 at level42. No full encounter replay claimed."
   ],
   "qa_setup": [
     "Level85 geared character with GM flag disabled; authorized GM travel between sites",

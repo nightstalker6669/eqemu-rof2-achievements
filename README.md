@@ -1,8 +1,8 @@
 # EQEmu RoF2 achievements
 
-A source release of the **RoF2 achievement engine, opcode mappings, packet layouts, reward selection support and reviewed Crescent Reach, Blightfire Moors and Shard’s Landing quest content**. It targets the May10,2013 RoF2 client and a pinned EQEmu source baseline.
+A source release of the **RoF2 achievement engine, opcode mappings, packet layouts, reward selection support and reviewed Crescent Reach, Blightfire Moors, Stone Hive and Shard’s Landing quest content**. It targets the May10,2013 RoF2 client and a pinned EQEmu source baseline.
 
-The release includes the engine/protocol and Crescent Reach, Blightfire Moors and Shard’s Landing content milestones. It does **not** claim that every achievement or quest through Rain of Fear is playable. The content packages contain eighteen reviewed achievement definitions. The wider historical research catalogue admits 254 identities; unfinished content remains outside this release.
+The release includes the engine/protocol and Crescent Reach, Blightfire Moors, Stone Hive and Shard’s Landing content milestones. It does **not** claim that every achievement or quest through Rain of Fear is playable. The content packages contain twenty-two reviewed achievement definitions. The wider historical research catalogue admits 254 identities; unfinished content remains outside this release.
 
 ## What is included
 
@@ -24,6 +24,8 @@ The release includes the engine/protocol and Crescent Reach, Blightfire Moors an
 
 - [Champion of the Moors quests](content/blightfire-champion/README.md): eight quests and 23 objectives, including the original bone-pile loot, witch hand-ins, Defan's floor-to-roof encounter, torch/signal interactions and all four Runestaff targets. The guide records native completion, persistence and the single GM crest used for turn-in validation.
 
+- [Stone Hive quests and rewards](content/stonehive/README.md): sixteen quests, 33 objectives and four achievement groups, with native completion and fresh-login persistence. Includes scout ground pickups, original botany/cooking acquisition, Warwing and Queen Pelzia, plus four class-filtered parent item reward sets. The guide labels encounter reconstructions and historical reward uncertainties.
+
 **Reward coverage:** Blightfire quest rewards and achievement gear rewards are separate. The nine Blightfire parent definitions currently lack gear reward mappings. Their quest milestones do not establish those rewards as complete; exact original choices and class eligibility remain under investigation.
 
 No tests, captures, client assets or private runtime records are included.
@@ -43,7 +45,7 @@ Start with upstream commit `c9c8747ac949deddb140d196d241fa4e777500c7`. Apply the
 7. `patches/0007-blightfire-cub-trap-permission.patch` — restricted targeting for the original Slashclaw Cub Trap quest interaction.
 8. `patches/0008-moorwalker-runestaff-permission.patch` — restricted targeting for the original Moorwalker Runestaff quest interaction.
 
-After building the engine and applying its schema migrations, follow the [Crescent](content/crescent/README.md), [Blightfire](content/blightfire-moors/README.md) and [Shard’s Landing](content/shards-landing/README.md) content guides for the ordered SQL and quest files. Then install the [Bixie and Makesn package](content/blightfire-bixies/README.md) after Blightfire Moors. Install [Battling Blightfire](content/blightfire-spirits/README.md) after Crescent Reach. Install [Welcome to the Moors](content/blightfire-welcome/README.md) after Crescent Reach and Blightfire Moors. Install [Champion of the Moors](content/blightfire-champion/README.md) after Crescent Reach and Blightfire Moors, with patch0008. Their read-only preflights detect conflicting custom content before installation.
+After building the engine and applying its schema migrations, follow the [Crescent](content/crescent/README.md), [Blightfire](content/blightfire-moors/README.md) and [Shard’s Landing](content/shards-landing/README.md) content guides for the ordered SQL and quest files. Then install the [Bixie and Makesn package](content/blightfire-bixies/README.md) after Blightfire Moors. Install [Battling Blightfire](content/blightfire-spirits/README.md) after Crescent Reach. Install [Welcome to the Moors](content/blightfire-welcome/README.md) after Crescent Reach and Blightfire Moors. Install [Champion of the Moors](content/blightfire-champion/README.md) after Crescent Reach and Blightfire Moors, with patch0008. Install the complete [Stone Hive package](content/stonehive/README.md) with all four required SQL files and its script set after the engine/schema foundation. Its included delivery adapter preserves earlier Cook behavior. Their read-only preflights detect conflicting custom content before installation.
 
 Apply the schema migrations before launching patched binaries. See [the protocol reference](protocol/README.md) for the opcode table and structures. [engine-provenance.json](engine-provenance.json) lists exact file scope and patch digests.
 

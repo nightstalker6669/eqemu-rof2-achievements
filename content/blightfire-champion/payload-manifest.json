@@ -21,7 +21,7 @@
   },
   {
     "path": "provenance/native-status.json",
-    "sha256": "d1743019c0ea0b40bb194f4d0c1a08ca9d92ab8036f8c78adc9f2aee8301cde9"
+    "sha256": "fc5b5d8ae9d9f9c7c439ba39abae6f2af107279f0366dc1c5eeb1c476972e580"
   },
   {
     "path": "provenance/new-npc-profiles.json",
@@ -41,7 +41,7 @@
   },
   {
     "path": "quest-manifest.json",
-    "sha256": "a97d16fe7567413ba39f838011f869a8fc95ff2af8b519247cec220466a3aa24"
+    "sha256": "b8cf76cea1fa9493f7618c8dd90350789e40fd745db794838261de3d598be2f6"
   },
   {
     "path": "quests/crescent/394092.lua",
@@ -61,7 +61,7 @@
   },
   {
     "path": "quests/lua_modules/achievement_quest_blightfire_champion.lua",
-    "sha256": "3b886200a1fd9575233f743c667552da9b3cbe11b7158d994d1487e60e961c10"
+    "sha256": "0e697ebb14dab89f7f74e283d05446523c06222b4509519d8f1fe11dfd80a9ba"
   },
   {
     "path": "quests/lua_modules/achievement_quest_blightfire_champion_data.lua",

@@ -82,7 +82,7 @@ local function boss()return eq.get_entity_list():GetNPCByNPCTypeID(D.tower.npc)e
 local function phase(n)return n:GetEntityVariable('champion_tower_phase')end
 function M.defan_spawn(e)
  e.self:SetEntityVariable('champion_tower_phase','idle');e.self:SetInvul(true);immune(e.self,1)
- eq.modify_npc_stat('level','42');eq.modify_npc_stat('max_hit','200');eq.modify_npc_stat('hp',tostring(D.tower.initial_hp));e.self:SetHP(e.self:GetMaxHP());eq.modify_npc_stat('mana',tostring(D.tower.mana));e.self:SetMana(e.self:GetMaxMana())
+ eq.modify_npc_stat('level','42');eq.modify_npc_stat('max_hit','200');eq.modify_npc_stat('max_hp',tostring(D.tower.initial_hp));e.self:SetHP(e.self:GetMaxHP());eq.modify_npc_stat('max_mana',tostring(D.tower.mana));e.self:SetMana(e.self:GetMaxMana())
  for _,spell in ipairs(D.tower.spells)do e.self:AddAISpell(1,spell.id,spell.type,-1,spell.recast,0)end
  e.self:SetSpecialAbility(SpecialAbility.summon,1);e.self:SetSpecialAbility(SpecialAbility.rampage,1);e.self:SetSpecialAbility(SpecialAbility.flurry,1)
 end

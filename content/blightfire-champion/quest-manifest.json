@@ -8,16 +8,12 @@
     "sha256": "03fef8f33e8b6b72a0773768a16d2ebac83852cba03c77ed5957849f5033ba64"
   },
   {
-    "path": "crescent/Moonreader_Ewera.pl",
-    "sha256": "479d337c169abe33209e1a05cc96e1af27250beae3fc1126cd8ed23bb55d1b91"
-  },
-  {
     "path": "global/spells/9181.lua",
     "sha256": "4d781512f5b2a2bd15078923555a15d195e5ea256ff4af073527829eba9c28bd"
   },
   {
     "path": "lua_modules/achievement_quest_blightfire_champion.lua",
-    "sha256": "3b886200a1fd9575233f743c667552da9b3cbe11b7158d994d1487e60e961c10"
+    "sha256": "0e697ebb14dab89f7f74e283d05446523c06222b4509519d8f1fe11dfd80a9ba"
   },
   {
     "path": "lua_modules/achievement_quest_blightfire_champion_data.lua",
