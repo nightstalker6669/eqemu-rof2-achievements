@@ -203,6 +203,17 @@
       ],
       "native_existing_port": "PASS actual original trap/cub capture and completed Slashclaw task; persisted task/component",
       "protocol_changes": false
+    },
+    {
+      "file": "patches/0008-moorwalker-runestaff-permission.patch",
+      "sha256": "5e4119c3bba64e0ca5d8749c77d44ac06ba048293461308034667fe61d7d5fb6",
+      "apply_check": "PASS against published first seven patches",
+      "scope": [
+        "zone/spells.cpp",
+        "zone/quest_item_target_permissions.h"
+      ],
+      "protocol_changes": false,
+      "native_existing_port": "PASS real Runestaff casts on all four original weakened Moorwalker types, distinct quest credit and final return/reward"
     }
   ],
   "validation": "Sequential patch application passed. Full clean pinned-source Linux x86-64 Release build of zone and world passed with GCC12.2 and upstream default PCH. Native clean-port run remains pending.",
@@ -223,17 +234,17 @@
       "world"
     ],
     "source_base": "c9c8747ac949deddb140d196d241fa4e777500c7",
-    "patches": 7,
+    "patches": 8,
     "platform": "Linux x86-64",
     "compiler": "GCC12.2.0",
     "configuration": "Release; EQEMU_BUILD_PCH=ON; EQEMU_BUILD_TESTS=OFF; latest incremental build concurrency2",
-    "isolation": "Separate pinned-source/build directories; seventh-patch dependency-aware build ran inside the existing server container without installing those portable binaries or connecting to the database",
+    "isolation": "Separate pinned-source/build directories; eighth-patch dependency-aware build ran without installing portable binaries or connecting to the database",
     "binaries_sha256": {
-      "zone": "cdff96e7af53541625fdc01485b6e3de148314a9e1ae1a2f26463f35b712d52e",
+      "zone": "6202aacd5a0b9554a1a8e44344b07a0975ea86ab75f431a487b96b16a0e94a37",
       "world": "ef6acca22a80eafa241ba4dc453599ce12109ab41694de4c8ae09fddd0666415"
     },
     "native_clean_port": "NOT RUN",
     "nondefault_configuration": "PCH-OFF is not validated; older Clang14 is not validated. No exploratory header fixes included.",
-    "sequence": "Original clean0001..0004 build followed by dependency-aware0005..0007 rebuilds of zone/world; no local shroud or housing dependencies"
+    "sequence": "Original clean0001..0004 build followed by dependency-aware0005..0008 rebuilds of zone/world; no local shroud or housing dependencies"
   }
 }
