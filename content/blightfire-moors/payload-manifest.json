@@ -1,7 +1,7 @@
 [
   {
     "path": "README.md",
-    "sha256": "d4425cd3abbd83441019a4382849ea17f9daf95e57bc6feb6f1b19286409fc40"
+    "sha256": "3c6587055e5c5b6374e5a809ce51ab5f226708d1a1680326eec9c3634132175a"
   },
   {
     "path": "apply_quests.py",
@@ -33,7 +33,7 @@
   },
   {
     "path": "provenance/native-status.json",
-    "sha256": "ffea1c97f440c10c58cdcc5d5d6c0ec385fbee94ada876d9de44a9a5d0ca6751"
+    "sha256": "028d5188d85744999c0f2c331e2ee7e43705265b5edd2de1d97ede91559df56c"
   },
   {
     "path": "provenance/quest-specification.json",

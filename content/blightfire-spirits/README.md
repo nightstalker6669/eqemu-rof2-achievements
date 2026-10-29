@@ -44,3 +44,7 @@ Some level and repeatability rules have conflicting historical sources; the sele
 ## Opcodes and structures
 
 The engine's [opcode and packet structure reference](../../protocol/README.md) remains available. These quests use existing task, spell, item and reward protocols; this package introduces no new opcode mapping or packet layout. Tests, captures, logs, private fixtures and client assets are excluded from public content.
+
+## Required parent gear upgrade
+
+After installing the five Blightfire quest packages, install the complete [Blightfire parent reward upgrade](../blightfire-parent-rewards/README.md). It supplies the eight family reward sets that were unimplemented at this package’s original verification checkpoint. The separate Conqueror meta reward remains unresolved. See that upgrade for its native claim/persistence coverage and historical limits.

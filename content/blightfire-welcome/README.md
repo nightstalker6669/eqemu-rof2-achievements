@@ -46,3 +46,7 @@ Exact original scene trigger volumes, crocodile spawn probability, ratwork timin
 ## Opcodes and structures
 
 The [opcode and packet structure reference](../../protocol/README.md) remains available. These quests use the existing task, item, spell and reward protocols; no new opcode mapping or packet layout is introduced. Public files exclude tests, captures, raw logs, private fixtures and client assets.
+
+## Required parent gear upgrade
+
+After installing the five Blightfire quest packages, install the complete [Blightfire parent reward upgrade](../blightfire-parent-rewards/README.md). It supplies the eight family reward sets that were unimplemented at this package’s original verification checkpoint. The separate Conqueror meta reward remains unresolved. See that upgrade for its native claim/persistence coverage and historical limits.

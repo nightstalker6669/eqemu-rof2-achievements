@@ -48,5 +48,6 @@
     "Simultaneous-player native scene gameplay not verified; offline ownership contracts passed",
     "Historical unknown scene constants and NPC combat values remain labelled reconstructions",
     "Portable installer filesystem checks passed; clean-port native gameplay and native Windows execution remain unverified"
-  ]
+  ],
+  "parent_reward_upgrade": "Required ../blightfire-parent-rewards package now supplies family gear sets; original verification entries above describe the earlier quest-only run. Conqueror meta reward remains unresolved."
 }

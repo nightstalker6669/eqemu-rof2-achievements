@@ -32,5 +32,6 @@
     "Original parent achievement gear choices remain unimplemented.",
     "Encounter timers, some levels/spells/add profiles retain labelled historical reconstructions.",
     "No native Windows installer execution was performed."
-  ]
+  ],
+  "parent_reward_upgrade": "Required ../blightfire-parent-rewards package now supplies family gear sets; original verification entries above describe the earlier quest-only run. Conqueror meta reward remains unresolved."
 }

@@ -64,3 +64,7 @@ The Spore Farms objective uses the period-revised **15 farmers**, and spores com
 **All 14 quests completed through native gameplay**, with saved task history, 14 component completions and all 3 parent achievements observed complete again after logout/login. The Rotwood repeat cycle also returned to its first task. See [native-status.json](provenance/native-status.json) for completed gameplay routes and remaining limits. Static checks, builds, native gameplay and clean-port installation are separate evidence. QA travel and a geared high-level test character do not establish historical minimum-level balance.
 
 The engine's [opcode and structure reference](../../protocol/README.md) remains available. This content package requires no additional achievement opcode values or packet-layout changes. Tests, raw captures, logs, private accounts/characters and client files are excluded from this release.
+
+## Required parent gear upgrade
+
+After installing the five Blightfire quest packages, install the complete [Blightfire parent reward upgrade](../blightfire-parent-rewards/README.md). It supplies the eight family reward sets that were unimplemented at this package’s original verification checkpoint. The separate Conqueror meta reward remains unresolved. See that upgrade for its native claim/persistence coverage and historical limits.

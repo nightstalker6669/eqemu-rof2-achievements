@@ -55,5 +55,6 @@
     "No separate unverified achievement reward inferred from original catalogue flags",
     "Native Windows server build/install NOT RUN; Python installer is cross-platform; local validation ran on Linux",
     "This package does not complete all achievements or quests through Rain of Fear"
-  ]
+  ],
+  "parent_reward_upgrade": "Required ../blightfire-parent-rewards package now supplies family gear sets; original verification entries above describe the earlier quest-only run. Conqueror meta reward remains unresolved."
 }

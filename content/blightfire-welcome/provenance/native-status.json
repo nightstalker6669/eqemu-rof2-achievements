@@ -27,5 +27,6 @@
     "Raw logs/captures",
     "Private character/account fixtures",
     "Client assets"
-  ]
+  ],
+  "parent_reward_upgrade": "Required ../blightfire-parent-rewards package now supplies family gear sets; original verification entries above describe the earlier quest-only run. Conqueror meta reward remains unresolved."
 }

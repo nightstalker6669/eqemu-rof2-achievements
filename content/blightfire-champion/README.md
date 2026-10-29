@@ -43,3 +43,7 @@ Confirmed item rewards include Pewdri’s sphere, the Feathered Cap, the witches
 ## Opcodes and structures
 
 The [opcode and packet structure reference](../../protocol/README.md) is available alongside the implementation. This package uses existing task, item-click, spell and reward protocols; it introduces no new opcode or packet layout. Tests, raw logs, private character fixtures and client assets are excluded from public releases.
+
+## Required parent gear upgrade
+
+After installing the five Blightfire quest packages, install the complete [Blightfire parent reward upgrade](../blightfire-parent-rewards/README.md). It supplies the eight family reward sets that were unimplemented at this package’s original verification checkpoint. The separate Conqueror meta reward remains unresolved. See that upgrade for its native claim/persistence coverage and historical limits.

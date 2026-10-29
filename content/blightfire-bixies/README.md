@@ -48,3 +48,7 @@ Guards spawn at the original thrall point rather than at an arbitrary lateral of
 See [native status](provenance/native-status.json) for the actual gameplay coverage. Builds, offline checks, gameplay and portable installation have distinct scopes. Geared high-level QA travel does not establish historical minimum-level combat balance.
 
 The engine's [opcode and structure reference](../../protocol/README.md) remains available. This content adds no new opcode mapping or packet structure. Tests, raw captures, logs, private accounts, character fixtures and client assets are excluded from this package.
+
+## Required parent gear upgrade
+
+After installing the five Blightfire quest packages, install the complete [Blightfire parent reward upgrade](../blightfire-parent-rewards/README.md). It supplies the eight family reward sets that were unimplemented at this package’s original verification checkpoint. The separate Conqueror meta reward remains unresolved. See that upgrade for its native claim/persistence coverage and historical limits.
