@@ -214,9 +214,19 @@
       ],
       "protocol_changes": false,
       "native_existing_port": "PASS real Runestaff casts on all four original weakened Moorwalker types, distinct quest credit and final return/reward"
+    },
+    {
+      "file": "patches/0009-idle-zone-task-reload.patch",
+      "sha256": "d46c79a9e14acf3f8906f330b83f0029d70c52f7f9230f315e4737711e84afde",
+      "apply_check": "PASS against pinned eight-layer clean source",
+      "scope": [
+        "world/zonelist.cpp"
+      ],
+      "protocol_changes": false,
+      "native_existing_port": "All6zoneprocesses,5idle, reloaded670tasks; cross-zone Soothe then completed;19Mesaquests/Pranks rewards persisted across freshlogin"
     }
   ],
-  "validation": "Sequential patch application passed. Full clean pinned-source Linux x86-64 Release build of zone and world passed with GCC12.2 and upstream default PCH. Native clean-port run remains pending.",
+  "validation": "Sequential nine-layer application and clean-prefix Linux GCC12.2 Release builds passed; native clean-port gameplay and Windows execution remain unverified.",
   "exclusion_reason": "No tests/fixtures/examples, legacy ToB coverage report or broad native criteria repair; historical content is separately curated.",
   "extra_baseline_file": {
     "path": "zone/zone.cpp",
@@ -234,17 +244,17 @@
       "world"
     ],
     "source_base": "c9c8747ac949deddb140d196d241fa4e777500c7",
-    "patches": 8,
+    "patches": 9,
     "platform": "Linux x86-64",
     "compiler": "GCC12.2.0",
     "configuration": "Release; EQEMU_BUILD_PCH=ON; EQEMU_BUILD_TESTS=OFF; latest incremental build concurrency2",
     "isolation": "Separate pinned-source/build directories; eighth-patch dependency-aware build ran without installing portable binaries or connecting to the database",
     "binaries_sha256": {
       "zone": "6202aacd5a0b9554a1a8e44344b07a0975ea86ab75f431a487b96b16a0e94a37",
-      "world": "ef6acca22a80eafa241ba4dc453599ce12109ab41694de4c8ae09fddd0666415"
+      "world": "57cf561ab28bee09bd8054c89242aad4b98e3a3afe2b0c0b39b6a93ba09564d9"
     },
     "native_clean_port": "NOT RUN",
     "nondefault_configuration": "PCH-OFF is not validated; older Clang14 is not validated. No exploratory header fixes included.",
-    "sequence": "Original clean0001..0004 build followed by dependency-aware0005..0008 rebuilds of zone/world; no local shroud or housing dependencies"
+    "sequence": "Original clean0001..0004 build followed by dependency-aware0005..0009 rebuilds of zone/world; ninth patch rebuilds world only; no local shroud or housing dependencies"
   }
 }
